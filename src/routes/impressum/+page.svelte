@@ -1,14 +1,12 @@
 <script lang="ts">
+	import SEO from '$lib/components/SEO.svelte';
 	import ObfAddr from '$lib/components/obf/ObfAddr.svelte';
 	import ObfMail from '$lib/components/obf/ObfMail.svelte';
 	import ObfPhone from '$lib/components/obf/ObfPhone.svelte';
 	import ObfHoneypot from '$lib/components/obf/ObfHoneypot.svelte';
 </script>
 
-<svelte:head>
-	<title>Impressum - Projektname</title>
-	<meta name="description" content="Impressum und rechtliche Angaben." />
-</svelte:head>
+<SEO title="Impressum - Projektname" description="Impressum und rechtliche Angaben." noindex />
 
 <section class="mx-auto max-w-3xl px-6 py-16">
 	<a href="/" class="mb-8 inline-block text-sm text-surface-500 transition-colors hover:text-primary">&larr; Zurueck</a>

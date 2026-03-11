@@ -1,0 +1,20 @@
+# Projektname
+
+> TODO: Kurze Beschreibung des Projekts fuer LLMs und AI-Crawler.
+
+## Ueber
+
+- Name: Projektname
+- URL: https://example.com
+- Sprache: Deutsch
+- Typ: Website
+
+## Seiten
+
+- Startseite: https://example.com/
+- Impressum: https://example.com/impressum
+- Datenschutz: https://example.com/datenschutz
+
+## Kontakt
+
+- E-Mail: mail@example.com

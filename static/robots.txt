@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://example.com/sitemap.xml
+
+# LLM-readable info
+# https://example.com/llms.txt

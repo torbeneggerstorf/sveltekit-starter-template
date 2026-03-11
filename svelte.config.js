@@ -11,7 +11,12 @@ const config = {
 			}
 		}),
 		prerender: {
-			handleMissingId: 'warn'
+			handleMissingId: 'warn',
+			handleHttpError: ({ path, message }) => {
+				// Ignore missing OG images during prerender
+				if (path.includes('og-image')) return;
+				throw new Error(message);
+			}
 		}
 	}
 };

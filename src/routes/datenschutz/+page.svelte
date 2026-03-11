@@ -1,13 +1,11 @@
 <script lang="ts">
 	import * as CookieConsent from 'vanilla-cookieconsent';
+	import SEO from '$lib/components/SEO.svelte';
 	import ObfMail from '$lib/components/obf/ObfMail.svelte';
 	import ObfHoneypot from '$lib/components/obf/ObfHoneypot.svelte';
 </script>
 
-<svelte:head>
-	<title>Datenschutz - Projektname</title>
-	<meta name="description" content="Datenschutzerklaerung und Informationen zur Datenverarbeitung." />
-</svelte:head>
+<SEO title="Datenschutz - Projektname" description="Datenschutzerklaerung und Informationen zur Datenverarbeitung." noindex />
 
 <section class="mx-auto max-w-3xl px-6 py-16">
 	<a href="/" class="mb-8 inline-block text-sm text-surface-500 transition-colors hover:text-primary">&larr; Zurueck</a>

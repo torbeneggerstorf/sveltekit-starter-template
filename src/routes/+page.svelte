@@ -1,14 +1,12 @@
 <script lang="ts">
+	import SEO from '$lib/components/SEO.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import Badge from '$lib/components/Badge.svelte';
 	import Card from '$lib/components/Card.svelte';
 	import Section from '$lib/components/Section.svelte';
 </script>
 
-<svelte:head>
-	<title>Projektname</title>
-	<meta name="description" content="Beschreibung des Projekts." />
-</svelte:head>
+<SEO title="Projektname" description="Beschreibung des Projekts." />
 
 <!-- Hero -->
 <section class="mx-auto max-w-5xl px-6 py-24 text-center md:py-32">
