@@ -14,7 +14,7 @@
 		script.src = `${MATOMO_URL}/matomo.js`;
 		document.head.appendChild(script);
 
-		const _paq = ((window as Record<string, unknown>)._paq ??= []) as unknown[][];
+		const _paq = ((window as unknown as Record<string, unknown>)._paq ??= []) as unknown[][];
 		_paq.push(['setTrackerUrl', `${MATOMO_URL}/matomo.php`]);
 		_paq.push(['setSiteId', SITE_ID]);
 		_paq.push(['trackPageView']);
