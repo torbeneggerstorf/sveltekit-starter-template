@@ -1,0 +1,102 @@
+@import 'tailwindcss';
+
+/*
+ * ==========================================================================
+ * THEME CONFIGURATION
+ * Replace colors, fonts, and animations with your project's design tokens.
+ * ==========================================================================
+ */
+
+@theme {
+	/* --- Colors --- */
+	--color-primary: #2563eb;
+	--color-primary-hover: #1d4ed8;
+	--color-accent: #f59e0b;
+	--color-accent-hover: #d97706;
+
+	--color-surface-50: #fafafa;
+	--color-surface-100: #f4f4f5;
+	--color-surface-200: #e4e4e7;
+	--color-surface-300: #d4d4d8;
+	--color-surface-400: #a1a1aa;
+	--color-surface-500: #71717a;
+	--color-surface-600: #52525b;
+	--color-surface-700: #3f3f46;
+	--color-surface-800: #27272a;
+	--color-surface-900: #18181b;
+	--color-surface-950: #09090b;
+
+	/* --- Fonts --- */
+	--font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	--font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+	/* --- Animations --- */
+	--animate-fade-in: fade-in 0.5s ease-out;
+	--animate-slide-up: slide-up 0.5s ease-out;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-up {
+	from {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/*
+ * ==========================================================================
+ * BASE STYLES
+ * ==========================================================================
+ */
+
+html {
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: var(--font-sans);
+	color: var(--color-surface-900);
+	background-color: var(--color-surface-50);
+}
+
+::selection {
+	background-color: var(--color-primary);
+	color: white;
+}
+
+/*
+ * ==========================================================================
+ * SCROLLBAR
+ * ==========================================================================
+ */
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-surface-100);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-surface-400);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-surface-500);
+}

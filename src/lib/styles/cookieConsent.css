@@ -1,0 +1,14 @@
+/* Custom overrides for vanilla-cookieconsent */
+
+#cc-main {
+	--cc-font-family: var(--font-sans);
+	--cc-bg: var(--color-surface-50);
+	--cc-primary-color: var(--color-surface-900);
+	--cc-secondary-color: var(--color-surface-600);
+	--cc-btn-primary-bg: var(--color-primary);
+	--cc-btn-primary-hover-bg: var(--color-primary-hover);
+	--cc-btn-primary-color: #fff;
+	--cc-separator-border-color: var(--color-surface-200);
+	--cc-cookie-category-block-bg: var(--color-surface-100);
+	--cc-overlay-bg: rgba(0, 0, 0, 0.5);
+}
