@@ -1,11 +1,8 @@
 <script lang="ts">
+	import * as CookieConsent from 'vanilla-cookieconsent';
+
 	const year = new Date().getFullYear();
 	const buildVersion = __BUILD_VERSION__;
-
-	function openCookieSettings() {
-		// vanilla-cookieconsent exposes this globally
-		(window as Record<string, unknown>).CookieConsentApi?.showPreferences?.();
-	}
 </script>
 
 <footer class="border-t border-surface-200 bg-surface-100">
@@ -32,7 +29,7 @@
 				<p class="mb-3 text-sm font-semibold text-surface-900">Einstellungen</p>
 				<ul class="space-y-2">
 					<li>
-						<button onclick={openCookieSettings} class="text-sm text-surface-500 transition-colors hover:text-primary">Cookie-Einstellungen</button>
+						<button onclick={() => CookieConsent.showPreferences()} class="text-sm text-surface-500 transition-colors hover:text-primary">Cookie-Einstellungen</button>
 					</li>
 				</ul>
 			</div>

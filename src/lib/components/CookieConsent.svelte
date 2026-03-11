@@ -2,17 +2,12 @@
 	import { onMount } from 'svelte';
 	import { cookieConsentConfig } from '$lib/config/cookieConsent';
 
-	let CookieConsentLib = $state<typeof import('vanilla-cookieconsent') | null>(null);
-
 	onMount(async () => {
-		const [cc] = await Promise.all([import('vanilla-cookieconsent'), import('vanilla-cookieconsent/dist/cookieconsent.css'), import('$lib/styles/cookieConsent.css')]);
-
-		CookieConsentLib = cc;
-	});
-
-	$effect(() => {
-		if (CookieConsentLib) {
-			CookieConsentLib.run(cookieConsentConfig);
-		}
+		await import('vanilla-cookieconsent/dist/cookieconsent.css');
+		await import('$lib/styles/cookieConsent.css');
+		const cc = await import('vanilla-cookieconsent');
+		cc.run(cookieConsentConfig);
 	});
 </script>
+
+<!-- No visible output - vanilla-cookieconsent renders itself into the DOM -->

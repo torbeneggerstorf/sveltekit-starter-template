@@ -1,10 +1,7 @@
 <script lang="ts">
+	import * as CookieConsent from 'vanilla-cookieconsent';
 	import ObfMail from '$lib/components/obf/ObfMail.svelte';
 	import ObfHoneypot from '$lib/components/obf/ObfHoneypot.svelte';
-
-	function openCookieSettings() {
-		(window as Record<string, unknown>).CookieConsentApi?.showPreferences?.();
-	}
 </script>
 
 <svelte:head>
@@ -47,7 +44,7 @@
 			<p class="mt-2">
 				Diese Website verwendet Cookies. Sie koennen Ihre Cookie-Einstellungen jederzeit anpassen:
 			</p>
-			<button onclick={openCookieSettings} class="mt-3 rounded-lg border border-surface-300 px-4 py-2 text-sm font-semibold text-surface-700 transition-colors hover:bg-surface-100">
+			<button onclick={() => CookieConsent.showPreferences()} class="mt-3 rounded-lg border border-surface-300 px-4 py-2 text-sm font-semibold text-surface-700 transition-colors hover:bg-surface-100">
 				Cookie-Einstellungen oeffnen
 			</button>
 		</div>
