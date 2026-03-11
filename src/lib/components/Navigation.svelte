@@ -16,7 +16,7 @@
 	}
 </script>
 
-<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-0 focus:z-[100] focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white focus:rounded-b-lg">Zum Inhalt springen</a>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-black focus:text-white focus:px-4 focus:py-2 focus:font-semibold">Zum Inhalt springen</a>
 
 <header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/95 backdrop-blur-sm">
 	<nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">

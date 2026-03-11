@@ -1,8 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 	import { onMount } from 'svelte';
-	import { initTheme } from '$lib/stores/theme.svelte.ts';
-	import { toastStore } from '$lib/stores/toast.svelte.ts';
+	import { initTheme } from '$lib/stores/theme.svelte';
+	import { toastStore } from '$lib/stores/toast.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Toast from '$lib/components/Toast.svelte';
